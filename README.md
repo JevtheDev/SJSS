@@ -14,8 +14,10 @@ must add 2captcha api key to the links in lines 58 & 68
 
 to run:
 clone the repo
-cd repo
+
+cd repo in CMD
+
 python slamjam.py
 
-Feel free to pull
+Feel free to pull and make it better
 S/O to @Azerpass for the inspo 
