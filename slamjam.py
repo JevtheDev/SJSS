@@ -55,9 +55,8 @@ class Raffle(object):
 		]
 		self.url = "https://slamjamsocialism-drops.com/graphql"
 		return Raffle()
-url="http://2captcha.com/in.php?key=*2captchakey*&method=userrecaptcha&googlekey=6LfYhz0UAAAAAJFKp28Sg0NnAEIPMfKI1RJSGsdB&pageurl=https://slamjamsocialism-drops.com/graphql"
-
 def solvecaptcha():
+	url="http://2captcha.com/in.php?key=*2captchakey*&method=userrecaptcha&googlekey=6LfYhz0UAAAAAJFKp28Sg0NnAEIPMfKI1RJSGsdB&pageurl=https://slamjamsocialism-drops.com/graphql"
 	resp = requests.get(url) 
 	if resp.text[0:2] != 'OK':
 	    quit('Error. Captcha is not received')
