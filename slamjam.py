@@ -1,14 +1,15 @@
 # coding=utf-8
 import requests, json, time, random, datetime, threading, pickle, os, string
+from faker import Faker
 from termcolor import colored
 
 sitekey = "6LfYhz0UAAAAAJFKp28Sg0NnAEIPMfKI1RJSGsdB"
 
-firstnames = ["King ","Allen ","Jev ","Chef ","Moe ","Juelz "]
-fn = random.choice(firstnames)
+fake = Faker()
 
-lastnames = ["Mayweather ","Dick ","Muff ","Money ","Santana "]
-ln = random.choice(lastnames)
+fn = fake.first_name()
+
+ln = fake.lastname()
 
 sizes = ['38 ½','39','40','40 ½','41','42','42 ½','43','44','44 ½','45','45 ½','46','47'] #check sizes on site first
 size = random.choice(sizes)
@@ -19,7 +20,7 @@ shoe_id = "132" #update
 shoe_name = "Nike Air Blazer X Off White"
 raffle_id = "67" # update 
 country_id = "840" #US country code
-city = " " #enter city
+city = fake.city()
 
 def emailz():
 	string.letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
