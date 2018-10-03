@@ -45,7 +45,7 @@ phone = gen_phone()
 
 def log(event):
 	d = datetime.datetime.now().strftime("%H:%M:%S")
-	print("Raffle SJS by @Moneymitchell :: " + str(d) + " :: " + event)
+	print("SJSS by @Moneymitchell :: " + str(d) + " :: " + event)
 
 class Raffle(object):
 	def __init__(self):
