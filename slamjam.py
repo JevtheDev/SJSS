@@ -3,7 +3,7 @@ import requests, json, time, random, datetime, threading, pickle, os, string
 from faker import Faker
 from termcolor import colored
 
-sitekey = "6LfYhz0UAAAAAJFKp28Sg0NnAEIPMfKI1RJSGsdB"
+sitekey = "6LfYhz0UAAAAAJFKp28Sg0NnAEIPMfKI1RJSGsdB" # Check SiteKey
 
 fake = Faker()
 
@@ -57,7 +57,7 @@ class Raffle(object):
 		self.url = "https://slamjamsocialism-drops.com/graphql"
 		return Raffle()
 def solvecaptcha():
-	url="http://2captcha.com/in.php?key=*2captchakey*&method=userrecaptcha&googlekey=6LfYhz0UAAAAAJFKp28Sg0NnAEIPMfKI1RJSGsdB&pageurl=https://slamjamsocialism-drops.com/graphql"
+	url="http://2captcha.com/in.php?key=*2captchakey*&method=userrecaptcha&googlekey=6LfYhz0UAAAAAJFKp28Sg0NnAEIPMfKI1RJSGsdB&pageurl=https://slamjamsocialism-drops.com/graphql"# Enter 2captcha Key and remove **
 	resp = requests.get(url) 
 	if resp.text[0:2] != 'OK':
 	    quit('Error. Captcha is not received')
@@ -65,7 +65,7 @@ def solvecaptcha():
 	# return captcha_id
 
 	# fetch ready 'g-recaptcha-response' token for captcha_id  
-	fetch_url = "http://2captcha.com/res.php?key=*2captchakey*&action=get&id=" + captcha_id
+	fetch_url = "http://2captcha.com/res.php?key=*2captchakey*&action=get&id=" + captcha_id # Enter 2captcha Key and remove * *
 	for i in range(1, 20):	
 		sleep(2) # wait 5 sec.
 		r = requests.get(fetch_url)
