@@ -20,4 +20,6 @@ cd repo in CMD
 python slamjam.py
 
 Feel free to pull and make it better
+
+twitter: @moneymitchell_
 S/O to @Azerpass for the inspo 
